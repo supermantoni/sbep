@@ -360,8 +360,3 @@ end
 
 
 
-local meta = FindMetaTable("SWEP")
-
-function meta:RenderScreen()
-
-end
