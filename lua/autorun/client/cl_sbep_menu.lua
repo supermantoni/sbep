@@ -187,7 +187,7 @@ function CreateMenu( )
 	ServerInfo:SetText( ServerMsg )
 
 
-	                 --TODO: Keep re-factorising
+
 
 	--Start Of Client Buttons,etc
 	local ClientCat = vgui.Create("DCollapsibleCategory")
@@ -198,7 +198,7 @@ function CreateMenu( )
 
 	local ClientPanel = vgui.Create("DPanel")
 	ClientPanel:SetParent(ClientCat)
-	ClientPanel:SetSize(420,100)
+	ClientPanel:SetSize(420,100) -- TODO: Change this
 	ClientPanel:SetPos(120,30)
 
 	ClientInfo = vgui.Create("DLabel",ClientPanel)
@@ -224,6 +224,15 @@ function CreateMenu( )
 	HTMLWindow:SetSize( ScrW() - 840, ScrH() / 1.875 )
 	PropSheet:AddSheet( "Error Reporting", VersionPanel, "gui/silkicons/user",false,false, "Use this Tab to Report Errors and Get the Latest Version of SBEP")
 	 --Add to our Version Check Tab
+
+
+	-- Start of Wiki Page
+	local WikiPanel = vgui.Create( "DPanel" )
+
+
+
+	PropSheet:AddSheet( "Wiki", WikiPanel, "gui/silikicons/wrench",false,false, "Access the SBEP wikipedia")
+
 
 end
 
